@@ -4,6 +4,7 @@
 
 Поле - тип данных
 
+---
 id - INT(11) * AUTO_INCREMENT
 Фамилия - VARCHAR(60) *
 Имя - VARCHAR(30) *
@@ -15,14 +16,33 @@ Email - VARCHAR(50) *
 Статус - TINYINT(1) * DEFAULT = 1
 Пароль - VARCHAR(32) *
 ID_группы - INT(11) *
+---
 
+---
 ** Сущность факультет
 
 id - INT(11) * AUTO_INCREMENT
 Название - VARCHAR(100) *
+---
 
+---
 ** Сущность группа
 
 id - INT(11) * AUTO_INCREMENT
 Название - VARCHAR(100) *
 ID_факультета - INT(11) *
+---
+
+---python
+import sqlite3
+
+connection = sqlite3.connect('my_database.db')
+cursor = connection.cursor()
+
+cursor.execute('''
+
+    ''')
+
+connection.commit()
+connection.close()
+---
