@@ -33,7 +33,8 @@ id - INT(11) * AUTO_INCREMENT
 ID_факультета - INT(11) *
 ---
 
----python
+---
+python
 import sqlite3
 
 connection = sqlite3.connect('my_database.db')
