@@ -18,6 +18,7 @@ cursor.execute('''
         FOREIGN KEY (faculty_id) REFERENCES faculty(faculty_id)                                  
     )''')
 
+
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS user (
         user_id INTEGER PRIMARY KEY AUTOINCREMENT,
