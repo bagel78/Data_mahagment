@@ -252,9 +252,10 @@ def add_users():
 # add_group('423', faculty[0])
 # print(faculty)
 
-#add_users()
-#add_groups()
-#add_faculties()
+
+add_faculties()
+add_groups()
+add_users()
 #truncate_faculties()
 
 
